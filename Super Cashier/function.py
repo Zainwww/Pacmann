@@ -95,6 +95,16 @@ class Transaction:
         # Menjumlahkan seluruh total harga item
         for x in self.Keranjang.values():
             total_harga += x['total harga']
+        if total_harga >500_000:
+            total_harga = total_harga * 0.9  # Diskon 10%
+            print("Selamat! Anda mendapatkan diskon 10% karena total belanja di atas 500.000")
+        elif total_harga >300_000:
+            total_harga = total_harga * 0.92  # Diskon 8%
+            print("Selamat! Anda mendapatkan diskon 8% karena total belanja di atas 300.000")
+        elif total_harga >200_000:
+            total_harga = total_harga * 0.95  # Diskon 5%
+            print("Selamat! Anda mendapatkan diskon 5% karena total belanja di atas 200.000")
         print("Total harga keseluruhan adalah:", total_harga)
+
 
 
