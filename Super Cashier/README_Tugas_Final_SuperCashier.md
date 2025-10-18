@@ -65,7 +65,10 @@ Item yang ditambahkan adalah:
 
 **Expected Output:**
 ```
-Item yang dibeli adalah: {'Ayam Goreng': [2, 20000], 'Pasta Gigi': [3, 15000]}
+|   No |  Nama Item  |   Jumlah Item |   Harga/item |   Total Harga |
+|------|-------------|---------------|--------------|---------------|
+|    1 | Ayam Goreng |             2 |        20000 |         40000 |
+|    2 | Pasta Gigi  |             3 |        15000 |         45000 |
 ```
 
 ---
@@ -76,8 +79,10 @@ maka customer menggunakan method `delete_item()`.
 
 **Expected Output:**
 ```
-{'Ayam Goreng': [2, 20000]}
-Item 'Pasta Gigi' berhasil di delete!
+|   No |  Nama Item  |   Jumlah Item |   Harga/item |   Total Harga |
+|------|-------------|---------------|--------------|---------------|
+|    1 | Ayam Goreng |             2 |        20000 |         40000 |
+Item 'Pasta Gigi' telah dihapus dari keranjang.
 ```
 
 ---
@@ -88,7 +93,7 @@ sehingga ia menggunakan `reset_transaction()` untuk menghapus semua item.
 
 **Expected Output:**
 ```
-Semua item berhasil di delete!
+Semua item telah dihapus dari keranjang.
 ```
 
 ---
@@ -105,8 +110,13 @@ Item yang ada di keranjang:
 
 **Expected Output:**
 ```
-Item yang dibeli adalah: {'Ayam Goreng': [2, 20000], 'Pasta Gigi': [3, 15000], 'Mainan Mobil': [1, 200000], 'Mi Instan': [5, 3000]}
-Total Belanja yang harus dibayarkan adalah Rp. 285000.0
+|   No |  Nama Item   |   Jumlah Item |   Harga/item |   Total Harga |
+|------|--------------|---------------|--------------|---------------|
+|    1 | Ayam Goreng  |             2 |        20000 |         40000 |
+|    2 |  Pasta Gigi  |             3 |        15000 |         45000 |
+|    3 | Mainan Mobil |             1 |       200000 |        200000 |
+|    4 |  Mi Instan   |             5 |         3000 |         15000 |
+Total harga keseluruhan adalah: 300000
 ```
 
 ---
@@ -134,21 +144,20 @@ python main.py
 ```
 Tampilan menu akan muncul seperti berikut:
 ```
-==============================
-     SELAMAT DATANG DI 
-     SUPER CASHIER SYSTEM
-==============================
-1. Add Item
-2. Update Item Name
-3. Update Item Quantity
-4. Update Item Price
-5. Delete Item
-6. Reset Transaction
-7. Check Order
-8. Total Price
-9. Exit Program
-==============================
-Pilih menu (1-9): 
+--------------------------------------------------
+Selamat datang di program super cashier
+Silahkan pilih menu yang tersedia
+1. Tambah item
+2. Update nama item
+3. Update jumlah item
+4. Update harga item
+5. Hapus item
+6. Reset transaksi
+7. Cek pesanan
+8. Total harga
+9. Keluar
+--------------------------------------------------
+Masukkan pilihan Anda (1-9):
 ```
 
 ---
