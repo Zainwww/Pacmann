@@ -67,7 +67,7 @@ class Transaction:
     def check_order(self):
         # Validasi setiap item di keranjang
         for key, value in self.Keranjang.items():
-            if key.isalpha() == False or value['jumlah item'] <= 0 or value['harga/item'] <= 0:
+            if len(key) <=0 or value['jumlah item'] <= 0 or value['harga/item'] <= 0:
                 print("Terdapat kesalahan pada item:", key)
             else:
                 print("Pemesanan sudah benar")
@@ -96,4 +96,5 @@ class Transaction:
         for x in self.Keranjang.values():
             total_harga += x['total harga']
         print("Total harga keseluruhan adalah:", total_harga)
+
 
