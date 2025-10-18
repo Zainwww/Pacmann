@@ -35,7 +35,7 @@ Program **Super Cashier** ini dibuat untuk memenuhi kebutuhan sistem kasir self-
 
 Berikut flowchart utama dari sistem **Super Cashier** (berdasarkan hasil rancangan):
 
-![Flowchart Program](Diagram%20Tanpa%20Judul.drawio.png)
+![Flowchart Program](Flowchart%20Program.drawio.png)
 
 **Penjelasan singkat:**
 1. Program dimulai (Start)
