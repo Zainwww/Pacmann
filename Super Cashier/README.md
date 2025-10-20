@@ -114,9 +114,10 @@ Item yang ada di keranjang:
 |------|--------------|---------------|--------------|---------------|
 |    1 | Ayam Goreng  |             2 |        20000 |         40000 |
 |    2 |  Pasta Gigi  |             3 |        15000 |         45000 |
-|    3 | Mainan Mobil |             1 |       200000 |        200000 |
+|    3 | Mobil Mainan |             1 |       200000 |        200000 |
 |    4 |  Mi Instan   |             5 |         3000 |         15000 |
-Total harga keseluruhan adalah: 300000
+Selamat! Anda mendapatkan diskon 5% karena total belanja di atas 200.000
+Total harga keseluruhan adalah: 285000.0
 ```
 
 ---
